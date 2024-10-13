@@ -1,4 +1,4 @@
-﻿namespace cash_tracking_app
+﻿namespace CashTrackingApp
 {
     public partial class MainPage : ContentPage
     {

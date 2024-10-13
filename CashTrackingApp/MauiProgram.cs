@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace cash_tracking_app
+namespace CashTrackingApp
 {
     public static class MauiProgram
     {

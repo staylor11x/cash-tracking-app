@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace cash_tracking_app
+namespace CashTrackingApp
 {
     internal class Program : MauiApplication
     {
