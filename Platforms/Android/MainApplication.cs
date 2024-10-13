@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace cash_tracking_app
+namespace CashTrackingApp
 {
     [Application]
     public class MainApplication : MauiApplication

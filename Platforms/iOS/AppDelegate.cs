@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace cash_tracking_app
+namespace CashTrackingApp
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

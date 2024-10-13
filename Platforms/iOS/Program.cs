@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace cash_tracking_app
+namespace CashTrackingApp
 {
     public class Program
     {
