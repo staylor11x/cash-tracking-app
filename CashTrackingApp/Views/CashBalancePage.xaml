@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vm="clr-namespace:CashTrackingApp.ViewModels"
+             xmlns:local="clr-namespace:CashTrackingApp.ViewModels"
              x:Class="CashTrackingApp.Views.CashBalancePage"
              Title="Cash Balance"
              BackgroundColor="Black">
 
     <ContentPage.BindingContext>
-        <vm:CashViewModel />
+        <local:CashViewModel /> 
     </ContentPage.BindingContext>
 
     <StackLayout Padding="20" Spacing="15" VerticalOptions="Center">
