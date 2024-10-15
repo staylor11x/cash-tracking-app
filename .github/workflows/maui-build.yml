@@ -14,29 +14,33 @@ jobs:
     runs-on: ubuntu-latest  # This specifies the environment the build will run on
 
     steps:
-      # Step 1: Check out the code from repository
+      # Check out the code from repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up .NET SDK
+      # Set up .NET SDK
       - name: Set up .NET Core SDK
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0'  
 
-      # Step 3: Restore dependencies
+      # Install MAUI workloads
+      - name: Install MAUI workloads
+        run: dotnet workload install maui
+
+      # Restore dependencies
       - name: Restore dependencies
         run: dotnet restore
 
-      # Step 4: Build the solution in Release mode
+      # Build the solution in Release mode
       - name: Build the solution
         run: dotnet build --configuration Release
 
-      # Step 5: Run unit tests
+      # Run unit tests
       - name: Run unit tests
         run: dotnet test --no-build --verbosity normal
 
-      # Step 6: Build APK for Android
+      # Build APK for Android
       - name: Build Android APK
         run: dotnet build -t:BuildApk -f:net8.0-android --configuration Release
 
